@@ -17,9 +17,9 @@ theme_precmd () {
 setopt prompt_subst
 if [ "$USER" = 'root' ]
 then
-PROMPT='%B%F{red}%m%k%B%F{green}${vcs_info_msg_0_} %B%F{blue}%c% %{$reset_color%} # '
+PROMPT='%B%F{red}%m%k%B%F{green}${vcs_info_msg_0_} %B%F{blue}%c%  #%{$reset_color%} '
 else
-PROMPT='%B%F{green}%n@%m%k${vcs_info_msg_0_} %B%F{blue}%c% %{$reset_color%} # '
+PROMPT='%B%F{green}%n@%m%k${vcs_info_msg_0_} %B%F{blue}%c%  #%{$reset_color%} '
 fi
 autoload -U add-zsh-hook
 add-zsh-hook precmd  theme_precmd
